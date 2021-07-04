@@ -26,6 +26,9 @@ font-family: 'Sanchez', serif!important;
 
 html{
   overflow:hidden;
+  scroll-behavior: smooth;
+
+
 }
 
 
@@ -558,7 +561,7 @@ Layout
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 40px;
+  padding-bottom: 6em;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -568,13 +571,16 @@ Layout
   -ms-flex: 1;
   flex: 1;
 }
+.navigation-footer span{
+  display:none;
+}
 
 .navigation-contact-detail {
   color: #616161;
   font-size: 2em;
   font-weight: 700;
   text-align: right;
-  line-height: 1;
+  line-height:1;
 }
 
 .email-address {
@@ -751,8 +757,8 @@ Layout
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 21em;
-  padding-bottom: 2em;
+  padding-top: 30vh;
+  padding-bottom: 10vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -957,7 +963,6 @@ Layout
 Breakpoints
 --------------------------------------------------------*/
 
-
 @media (max-width: 991px) {
   .container-main {
     z-index: 1;
@@ -1004,7 +1009,7 @@ Breakpoints
   }
   .offcanvas-menu {
     width: 100%;
-    padding-top: 15vw;
+    padding-top: 30vw;
   }
   .right-arrow {
     bottom: 0px;
@@ -1015,10 +1020,29 @@ Breakpoints
   .slide-nav {
 display:none;
   }
-  .navigation-footer p{
-    font-size: 1em;
+  .footer-right{
+    display:none;
   }
-
+  .navigation-footer span{
+    display:block;
+  }
+  .container-bottom {
+    z-index: 8;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size:0.8em;
+  }
+  .copyright {
+    /* -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1; */
+    text-align:center!important;
+  }
+ 
 }
 
 @media (max-width: 479px) {
@@ -1032,19 +1056,23 @@ display:none;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    /* border:1px solid red; */
     font-size:0.8em;
   }
   .copyright {
-    -webkit-box-ordinal-group: 2;
+    /* -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1;
+    order: 1; */
+    text-align:center!important;
   }
   .offcanvas-menu {
     width: 100%;
-    padding-top: 40vw;
+    padding-top: 30vw;
   }
+  .navigation-footer{
+    padding-top:0;
+  }
+
   .footer-right {
  display:none;
   }
@@ -1052,13 +1080,13 @@ display:none;
     padding-right: 20px;
     padding-left: 0px;
   }
-  .navigation-footer p{
-    font-size: 1em;
-  }
 
 
   .left-arrow {
     bottom: 0px;
+  }
+  .navigation-footer span{
+    display:block;
   }
 }
 
