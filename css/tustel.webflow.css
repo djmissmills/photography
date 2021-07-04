@@ -751,8 +751,8 @@ Layout
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 30vh;
-  padding-bottom: 30vh;
+  padding-top: 21em;
+  padding-bottom: 2em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
