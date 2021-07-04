@@ -572,7 +572,7 @@ Layout
 
 .navigation-contact-detail {
   color: #616161;
-  font-size: 14px;
+  font-size: 2em;
   font-weight: 700;
   text-align: right;
 }
@@ -590,11 +590,13 @@ Layout
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  font-size:1.5em;
 }
 
 .social-link {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 0.8em;
   color: #969696;
 }
 
@@ -1008,9 +1010,15 @@ Breakpoints
   .left-arrow {
     bottom: 0px;
   }
+  .slide-nav {
+display:none;
+  }
 }
 
 @media (max-width: 479px) {
+  .slide-nav {
+    display:none;
+      }
   .container-bottom {
     z-index: 8;
     -webkit-box-orient: vertical;
@@ -1044,6 +1052,8 @@ Breakpoints
     padding-right: 20px;
     padding-left: 0px;
   }
+
+
   .left-arrow {
     bottom: 0px;
   }
