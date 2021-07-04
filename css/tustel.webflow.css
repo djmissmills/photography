@@ -232,7 +232,11 @@ Layout
   flex: 0 350px;
   font-size: 18px;
   font-weight: 900;
+  color:red!important;
 }
+
+
+
 
 /* Icon 1 */
 
@@ -1042,10 +1046,24 @@ display:none;
     order: 1; */
     text-align:center!important;
   }
- 
+
+  .post {
+    padding-top: 30vh;
+    padding-bottom: 7;
+
+}
+
 }
 
 @media (max-width: 479px) {
+  .post {
+    padding-top: 30vh;
+    padding-bottom: 7;
+
+}
+
+
+
   .slide-nav {
     display:none;
       }
@@ -1057,6 +1075,7 @@ display:none;
     -ms-flex-direction: column;
     flex-direction: column;
     font-size:0.8em;
+
   }
   .copyright {
     /* -webkit-box-ordinal-group: 2;
@@ -1068,6 +1087,7 @@ display:none;
   .offcanvas-menu {
     width: 100%;
     padding-top: 30vw;
+    
   }
   .navigation-footer{
     padding-top:0;
