@@ -16,12 +16,17 @@ a:hover{
   color: #00e5ff!important;
 }
 
+
 body {
 font-family: 'Sanchez', serif!important;
   color: #969696;
   font-size: 14px;
   line-height: 20px;
 
+}
+
+html{
+  overflow:hidden;
 }
 
 
