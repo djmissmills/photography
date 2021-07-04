@@ -22,7 +22,6 @@ font-family: 'Sanchez', serif!important;
   color: #969696;
   font-size: 14px;
   line-height: 20px;
-
 }
 
 html{
@@ -575,6 +574,7 @@ Layout
   font-size: 2em;
   font-weight: 700;
   text-align: right;
+  line-height: 1;
 }
 
 .email-address {
@@ -956,6 +956,8 @@ Layout
 /*--------------------------------------------------------
 Breakpoints
 --------------------------------------------------------*/
+
+
 @media (max-width: 991px) {
   .container-main {
     z-index: 1;
@@ -1013,6 +1015,7 @@ Breakpoints
   .slide-nav {
 display:none;
   }
+
 }
 
 @media (max-width: 479px) {
@@ -1040,13 +1043,7 @@ display:none;
     padding-top: 40vw;
   }
   .footer-right {
-    margin-bottom: 1em;
-    /* -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column; */
-    display:block;
+ display:none;
   }
   .social-link {
     padding-right: 20px;
