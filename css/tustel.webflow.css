@@ -10,13 +10,21 @@ Table of Content
 /*--------------------------------------------------------
 Basic tags
 --------------------------------------------------------*/
+*{margin:0; padding:0;}
+
+a:hover{
+  color: #00e5ff!important;
+}
 
 body {
-font-family: 'Sanchez', serif;;
+font-family: 'Sanchez', serif!important;
   color: #969696;
   font-size: 14px;
   line-height: 20px;
+
 }
+
+
 
 a {
   -webkit-transition: color 200ms ease;
@@ -25,9 +33,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #00e5ff;
-}
 
 
 
@@ -98,6 +103,7 @@ Layout
 }
 
 .portfolio-category.gallery-title {
+  
   position: fixed;
   left: 50%;
   top: 50%;
@@ -138,7 +144,7 @@ Layout
   overflow: hidden;
   border-style: none;
   border-width: 1px;
-  border-color: red;
+  /* border-color: red; */
 }
 
 .category-image {
@@ -162,7 +168,7 @@ Layout
   overflow: hidden;
   border-style: none;
   border-width: 1px;
-  border-color: #f80000;
+  /* border-color: #f80000; */
 }
 
 
@@ -184,7 +190,7 @@ Layout
 .image-cover.cover-3 {
   border-style: solid;
   border-width: 1px;
-  border-color: red;
+  /* border-color: red; */
 }
 
 .container-top {
@@ -219,6 +225,76 @@ Layout
   flex: 0 350px;
   font-size: 18px;
   font-weight: 900;
+}
+
+/* Icon 1 */
+
+#nav-icon1 {
+  width: 3em;
+  height: 0.4em;
+  position: relative;
+  /* margin: 0.5em auto; */
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #7a7a7a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: 10px;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 20px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .nav {
@@ -314,7 +390,8 @@ Layout
 .breadcrumb {
   position: relative;
   text-transform: uppercase;
-  top: 10%;
+  padding-top: 1em;
+  top: 15%;
   right: auto;
   bottom: auto;
   z-index: 0;
@@ -364,13 +441,7 @@ Layout
   background-color: #fff;
 }
 
-.flipper-nav-container {
-  position: relative;
-  left: 0px;
-  right: 0px;
-  height: 43px;
-  border-radius: 25px;
-}
+
 
 .line-3 {
   position: absolute;
@@ -391,46 +462,7 @@ Layout
   background-color: #fff;
 }
 
-.flipper-nav-button {
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  width: 43px;
-  height: 43px;
-  padding: 0px;
-  border-radius: 55px;
-  background-color: #f76d6d;
-  box-shadow: 1px 1px 3px 0 hsla(0, 0%, 47.8%, 0.55);
-}
 
-.flipper-nav-button.w--open {
-  background-color: #f76d6d;
-  box-shadow: 1px 1px 3px 0 hsla(0, 0%, 47.8%, 0.55);
-}
-
-.purple-nav-link {
-  right: 3px;
-  width: 52%;
-  margin-top: 10px;
-  float: right;
-  clear: left;
-  border-radius: 50px;
-  background-color: #786df7;
-  box-shadow: 1px 1px 3px 0 hsla(0, 0%, 47.8%, 0.55);
-  -webkit-transition: letter-spacing 250ms ease, width 250ms ease;
-  transition: letter-spacing 250ms ease, width 250ms ease;
-  font-family: Lato, sans-serif;
-  color: #fff;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: right;
-  letter-spacing: 2px;
-}
-
-.purple-nav-link:hover {
-  width: 55%;
-  letter-spacing: 4px;
-}
 
 .line-2 {
   position: absolute;
@@ -477,7 +509,7 @@ Layout
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 100%;
   height: 100vh;
   padding-top: 10vw;
   padding-right: 10vw;
@@ -502,14 +534,19 @@ Layout
 
 .main-nav-link {
   /* color: #00e5ff; */
-  color: #d100fa;
+  color: #43f75e;
   font-size: 60px;
   line-height: 1.5;
   font-weight: 900;
 }
 
-.main-nav-link.low-opacity {
-  color: #95f7a4;
+.main-nav-link.pink{
+  color: #d100fa;
+  
+}
+
+.main-nav-link.orange{
+  color: #fab300;
 }
 
 .navigation-footer {
@@ -607,6 +644,8 @@ Layout
   top: 50%;
   right: auto;
   bottom: auto;
+  border-radius:5px;
+
 }
 
 .category-photo.category-photo-left {
@@ -683,6 +722,7 @@ Layout
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  
 }
 
 .col {
@@ -764,10 +804,17 @@ Layout
   z-index: 999999;
 }
 
+.container-top a:hover{
+  opacity: 0.5;
+}
+
 .nav-link-block {
   position: relative;
   z-index: 9999;
+
 }
+
+
 
 .image-2 {
   height: auto;
@@ -871,7 +918,7 @@ Layout
 }
 
 .category-link:hover {
-  color: #fff;
+  color: #00e5ff;
 }
 
 .rich-text-block {
@@ -947,7 +994,7 @@ Breakpoints
     display: none;
   }
   .offcanvas-menu {
-    width: 70%;
+    width: 100%;
     padding-top: 15vw;
   }
   .right-arrow {
@@ -966,6 +1013,8 @@ Breakpoints
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    /* border:1px solid red; */
+    font-size:0.8em;
   }
   .copyright {
     -webkit-box-ordinal-group: 2;
@@ -974,19 +1023,20 @@ Breakpoints
     order: 1;
   }
   .offcanvas-menu {
-    width: 90%;
+    width: 100%;
     padding-top: 40vw;
   }
   .footer-right {
-    margin-bottom: 32px;
-    -webkit-box-orient: vertical;
+    margin-bottom: 1em;
+    /* -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: column; */
+    display:block;
   }
   .social-link {
-    padding-right: 0px;
+    padding-right: 20px;
     padding-left: 0px;
   }
   .left-arrow {

@@ -4639,7 +4639,6 @@ function combineReducers(reducers) {
   }
   var finalReducerKeys = Object.keys(finalReducers);
 
-  if (false) { var unexpectedKeyCache; }
 
   var sanityError;
   try {
@@ -4656,7 +4655,6 @@ function combineReducers(reducers) {
       throw sanityError;
     }
 
-    if (false) { var warningMessage; }
 
     var hasChanged = false;
     var nextState = {};
