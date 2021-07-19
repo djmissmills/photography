@@ -19,6 +19,7 @@ a:hover{
 
 body {
 font-family: 'Sanchez', serif!important;
+-webkit-font-smoothing: antialiased;
   color: #969696;
   font-size: 14px;
   line-height: 20px;
@@ -27,8 +28,6 @@ font-family: 'Sanchez', serif!important;
 html{
   overflow:hidden;
   scroll-behavior: smooth;
-
-
 }
 
 
@@ -564,7 +563,7 @@ Layout
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 6em;
+  padding-bottom: 8em;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
